@@ -16,4 +16,14 @@ code {
 .father {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.calendar__header {
+  width: 200px;
+  height: 20px;
+  border: 1px solid white;
 }
