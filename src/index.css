@@ -22,8 +22,42 @@ code {
   background-color: grey;
 }
 
-.calendar__header {
-  width: 200px;
-  height: 20px;
-  border: 1px solid white;
+.calendar header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.calendar header button,
+.calendar header select {
+  margin: 0 4px;
+}
+
+.calendar table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: auto;
+}
+
+.calendar th {
+  vertical-align: middle;
+  text-align: center;
+  height: 36px;
+}
+
+.calendar .day {
+  padding: 4px 8px;
+  vertical-align: middle;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.calendar .day:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+.calendar .day.today.selected {
+  border: 2px solid lightgray;
 }
